@@ -142,7 +142,7 @@ define python::virtualenv (
     }
 
     # Python 2.6 and older does not support setuptools/distribute > 0.8 which
-    # is required for pip wheel support, pip therefor requires --no-use-wheel flag
+    # is required for pip wheel support, pip therefor requires --no-binary :all: flag
     # if the # pip version is more recent than 1.4.1 but using an old python or
     # setuputils/distribute version
     # To check for this we test for wheel parameter using help and then using
